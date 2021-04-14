@@ -3,7 +3,7 @@
 mkdir tasks
 cd tasks
 touch task1.txt task2.txt
-ls -1 | sed "3,100d" > task3.txt
+ls | tee task3.txt
 cp task3.txt task4.txt
 echo "***task4.txt***"
 cat task4.txt
